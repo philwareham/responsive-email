@@ -102,14 +102,15 @@
       body[yahoo] .innertable {width:280px !important;}
 
       /* Resize hero image at smaller screen sizes. */
-      body[yahoo] .heroimage {width:280px !important; height: 93px !important;}
+      body[yahoo] .heroimage {width:280px !important; height:100px !important;}
 
-      /* Resize page tear at smaller screen sizes. */
-      body[yahoo] .pagetear {width:280px !important; height: 10px !important;}
+      /* Resize page shadow at smaller screen sizes. */
+      body[yahoo] .shadow {width:280px !important; height:4px !important;}
 
       /* Collapse footer columns. */
       body[yahoo] .footer-left  {width:320px !important;}
       body[yahoo] .footer-right {width:320px !important;}
+      body[yahoo] .footer-right img {float:left !important; margin:0 1em 0 0 !important;}
 
     }
 
@@ -144,7 +145,7 @@
 </head>
 
 
-<body style="width:100% !important; min-height:1000px; color:#333; background:#fff; font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:1.4;"
+<body style="width:100% !important; min-height:1000px; color:#333333; background:#e0dbcf; font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:1.4;"
 alink="#9d470a" link="#9d470a" bgcolor="#ffffff" text="#333333" yahoo="fix">
 <!-- You may adjust each of the values above for your template as needed.
 
@@ -165,7 +166,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
 
     <!-- Wrapper/Container Table: Use a wrapper table to control the width and the background color consistently of your email. Use this approach instead of setting attributes on the body tag. -->
     <table cellpadding="0" cellspacing="0" border="0" style="width:100% !important; margin:0; padding:0;">
-      <tr>
+      <tr bgcolor="#e0dbcf">
         <td>
 
 
@@ -215,7 +216,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
 
           <!-- CONTENT -->
             <!-- set a value for bgcolor -->
-            <tr bgcolor="#e0dbcf">
+            <tr bgcolor="#ffffff">
               <td style="padding-top:20px;">
 
 
@@ -231,7 +232,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                             <h1 style="color:#99cc33; margin-bottom:.5em;">Hi *|TITLE:FNAME|*</h1>
                             <!-- /hero article heading text -->
                             <!-- hero article paragraph text -->
-                            <p>PLACEHOLDER TEXT</p>
+                            <p style="margin-top:0; margin-bottom:0;">PLACEHOLDER</p>
                             <!-- /hero article paragraph text -->
                           </td>
                         </tr>
@@ -242,10 +243,15 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                   <!-- hero article main image: must be 560px x 186px -->
                   <tr>
                     <td>
-                      <img src="http://placehold.it/560x186&text=Hero+image" width="560" height="186" border="0" alt="Header (right)" class="heroimage" />
+                      <img src="img/hero.jpg" width="560" height="200" border="0" alt="" class="heroimage" />
                     </td>
                   </tr>
                   <!-- /hero article main image -->
+                  <tr>
+                    <td>
+                      <img src="img/shadow.gif" width="560" height="8" border="0" alt="" class="shadow" />
+                    </td>
+                  </tr>
                 </table>
                 <!-- /hero article -->
 
@@ -259,7 +265,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                         <tr valign="top">
                           <!-- standard article icon -->
                           <td width="65">
-                            <img src="img/rose-red.gif" width="60" height="60" border="0" alt="Icon" />
+                            <img src="img/icon.gif" width="60" height="60" border="0" alt="Icon" />
                           </td>
                           <!-- /standard article icon -->
                           <!-- standard article heading text -->
@@ -273,7 +279,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                       <table width="100%" cellpadding="10" cellspacing="0" border="0">
                         <tr valign="top">
                           <td>
-                            <p>PLACEHOLDER</p>
+                            <p style="margin-top:0; margin-bottom:0;">PLACEHOLDER</p>
                           </td>
                         </tr>
                       </table>
@@ -304,7 +310,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                         <tr valign="top">
                           <!-- standard article icon -->
                           <td width="65">
-                            <img src="img/rose-red.gif" width="60" height="60" border="0" alt="Icon" />
+                            <img src="img/icon.gif" width="60" height="60" border="0" alt="Icon" />
                           </td>
                           <!-- /standard article icon -->
                           <!-- standard article heading text -->
@@ -318,7 +324,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                       <table width="100%" cellpadding="10" cellspacing="0" border="0">
                         <tr valign="top">
                           <td>
-                            <p>PLACEHOLDER</p>
+                            <p style="margin-top:0; margin-bottom:0;">PLACEHOLDER</p>
                           </td>
                         </tr>
                       </table>
@@ -330,20 +336,20 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                 <!-- /standard article (right text) -->
 
 
-                <!-- secondary article (120px image) -->
-                <table bgcolor="#ffffff" style="margin-bottom:1em;" width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable">
+                <!-- secondary article (short story) -->
+                <table bgcolor="#f6f4f1" style="margin-bottom:1em;" width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable">
                   <tr valign="top">
                     <td>
                       <table align="left" width="280" cellpadding="0" cellspacing="0" border="0">
                         <tr valign="top">
                           <!-- blank cell - do not use for content -->
-                          <td bgcolor="#e0dbcf" height="18">
+                          <td bgcolor="#ffffff" height="18">
                             <img src="img/blank.gif" width="1" height="1" border="0" alt="" />
                           </td>
                           <!-- /blank cell -->
                           <!-- secondary article (120px image) main image -->
                           <td width="120" rowspan="2">
-                            <a href="{*WINNERSLINK*}" target="_blank"><img src="img/small-photo.jpg" width="120" height="90" border="0" alt="" /></a>
+                            <a href="{*WINNERSLINK*}" target="_blank"><img src="img/secondary-article-short-story.jpg" width="120" height="90" border="0" alt="" /></a>
                           </td>
                           <!-- /secondary article (120px image) main image -->
                         </tr>
@@ -376,7 +382,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                       <table align="right" width="280" cellpadding="0" cellspacing="0" border="0">
                         <tr valign="top" class="hide">
                           <!-- blank cell - do not use for content -->
-                          <td bgcolor="#e0dbcf" height="18">
+                          <td bgcolor="#ffffff" height="18">
                             <img src="img/blank.gif" width="1" height="1" border="0" alt="" />
                           </td>
                           <!-- /blank cell -->
@@ -387,7 +393,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                             <table width="100%" cellpadding="10" cellspacing="0" border="0">
                               <tr>
                                 <td>
-                                  <p>PLACEHOLDER</p>
+                                  <p style="margin-top:0; margin-bottom:0;">PLACEHOLDER</p>
                                 </td>
                               </tr>
                             </table>
@@ -399,11 +405,34 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                   </tr>
                   <tr>
                     <td>
-                      <img src="img/pagetear.gif" width="560" height="20" border="0" alt="" class="pagetear" />
+                      <img src="img/shadow.gif" width="560" height="8" border="0" alt="" class="shadow" />
                     </td>
                   </tr>
                 </table>
-                <!-- /secondary article (120px image) -->
+                <!-- /secondary article (short story) -->
+
+
+                <!-- secondary article (long story) -->
+                <table bgcolor="#f6f4f1" style="margin-bottom:1em;" width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable">
+                  <tr>
+                    <td>
+                      <table width="560" cellpadding="10" cellspacing="0" border="0" align="center" class="innertable">
+                        <tr>
+                          <td>
+                            <h1 style="font-size:26px; line-height:1.07692307692308; font-weight:normal; margin-top:0; margin-bottom:.5em; color:#99cc33;"><a style="color:#99cc33;" href="#" target="_blank">HEADING</a> <a class="hide"  href="#" target="_blank"><img style="display:block; border:none; outline:none; text-decoration:none; margin-left:5px;" align="right" src="img/secondary-article-long-story.jpg" width="140" height="112" border="0" alt="" /></a></h1>
+                            <p style="margin-top:0; margin-bottom:0;">PLACEHOLDER</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="img/shadow.gif" width="560" height="8" border="0" alt="" class="shadow" />
+                    </td>
+                  </tr>
+                </table>
+                <!-- /secondary article (long story) -->
 
 
               </td>
@@ -429,9 +458,9 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                         <tr>
                           <td style="color:#ffffff;">
                             <p>
-                              <a href="#" target="_blank"><img style="margin-right:1em;" align="left" src="http://placehold.it/32x32" width="32" height="32" border="0" alt="Facebook" /></a>
-                              <a href="#" target="_blank"><img style="margin-right:1em;" align="left" src="http://placehold.it/32x32" width="32" height="32" border="0" alt="Twitter" /></a>
-                              <a href="#" target="_blank"><img style="margin-right:1em;" align="left" src="http://placehold.it/32x32" width="32" height="32" border="0" alt="YouTube" /></a>
+                              <a href="#" target="_blank"><img style="margin-left:1em;" align="right" src="http://placehold.it/32x32" width="32" height="32" border="0" alt="Facebook" /></a>
+                              <a href="#" target="_blank"><img style="margin-left:1em;" align="right" src="http://placehold.it/32x32" width="32" height="32" border="0" alt="Twitter" /></a>
+                              <a href="#" target="_blank"><img style="margin-left:1em;" align="right" src="http://placehold.it/32x32" width="32" height="32" border="0" alt="YouTube" /></a>
                             </p>
                           </td>
                         </tr>
