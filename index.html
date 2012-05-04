@@ -63,7 +63,7 @@
        create a wrapper div around your email and that div will inherit your embedded body styles.
        The "#body_style" is defined for AOL because it does not support your embedded body definition nor
        your body tag, we will use this class in our wrapper div. */
-    body, #body_style {width:100% !important; min-height:1000px; color:#333; background:#fff; font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:1.4;}
+    body, #body_style {width:100% !important; min-height:1000px; color:#333333; background:#e0dbcf; font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:1.4;}
 
     /* This is the embedded CSS link color for Gmail. This will overwrite Hotmail and Yahoo Beta's
        embedded link colors and make it consistent with Gmail. Also use this rule on inline CSS. */
@@ -81,7 +81,7 @@
        "unstyle" any numbers that may be linked. The second block gives you a class ".mobile_link" to apply
        with a span tag to the numbers you would like linked and styled.
        More info: http://www.campaignmonitor.com/blog/post/3571/using-phone-numbers-in-html-email/ */
-    a[href^="tel"], a[href^="sms"] {text-decoration:none; color:#333; pointer-events:none; cursor:default;}
+    a[href^="tel"], a[href^="sms"] {text-decoration:none; color:#333333; pointer-events:none; cursor:default;}
     .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {text-decoration:default; color:#6e5c4f !important; pointer-events:auto; cursor:default;}
 
 
@@ -146,7 +146,7 @@
 
 
 <body style="width:100% !important; min-height:1000px; color:#333333; background:#e0dbcf; font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:1.4;"
-alink="#9d470a" link="#9d470a" bgcolor="#ffffff" text="#333333" yahoo="fix">
+alink="#9d470a" link="#9d470a" bgcolor="#e0dbcf" text="#333333" yahoo="fix">
 <!-- You may adjust each of the values above for your template as needed.
 
 We've included the style attribute for Gmail because it does not support embedded CSS and it will convert this body tag to
