@@ -81,8 +81,8 @@
        "unstyle" any numbers that may be linked. The second block gives you a class ".mobile_link" to apply
        with a span tag to the numbers you would like linked and styled.
        More info: http://www.campaignmonitor.com/blog/post/3571/using-phone-numbers-in-html-email/ */
-      a[href^="tel"], a[href^="sms"] {text-decoration:none; color:#333; pointer-events:none; cursor:default;}
-      .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {text-decoration:default; color:#6e5c4f !important; pointer-events:auto; cursor:default;}
+    a[href^="tel"], a[href^="sms"] {text-decoration:none; color:#333; pointer-events:none; cursor:default;}
+    .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {text-decoration:default; color:#6e5c4f !important; pointer-events:auto; cursor:default;}
 
 
     /****** MEDIA QUERIES ********/
@@ -197,13 +197,13 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                     <!-- header left: logo and link to homepage -->
                     <td width="320" valign="top">
                       <!-- set an image for header left - must be 320px width (height can be variable) -->
-                      <a href="#" target="_blank"><img src="http://placehold.it/320x160/453a33/ffffff&text=Header+(left)" width="320" height="60" alt="Header (left)" /></a>
+                      <a href="#" target="_blank"><img src="http://placehold.it/320x160/453a33/ffffff&text=Header+(left)" width="320" height="60" border="0" alt="Header (left)" /></a>
                     </td>
                     <!-- /header left -->
                     <!-- header right: hidden in mobile version -->
                     <td width="280" valign="top" class="hide">
                       <!-- set an image for header right - must be 280px width (height can be variable) -->
-                      <img src="http://placehold.it/320x160/453a33/ffffff&text=Header+(right)" width="280" height="60" alt="Header (right)" />
+                      <img src="http://placehold.it/320x160/453a33/ffffff&text=Header+(right)" width="280" height="60" border="0" alt="Header (right)" />
                     </td>
                     <!-- /header right -->
                   </tr>
@@ -242,7 +242,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                   <!-- hero article main image: must be 560px x 186px -->
                   <tr>
                     <td>
-                      <img src="http://placehold.it/560x186&text=Hero+image" width="560" height="186" alt="Header (right)" class="heroimage" />
+                      <img src="http://placehold.it/560x186&text=Hero+image" width="560" height="186" border="0" alt="Header (right)" class="heroimage" />
                     </td>
                   </tr>
                   <!-- /hero article main image -->
@@ -259,7 +259,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                         <tr valign="top">
                           <!-- standard article icon -->
                           <td width="65">
-                            <img src="img/rose-red.gif" width="60" height="60" alt="Icon" />
+                            <img src="img/rose-red.gif" width="60" height="60" border="0" alt="Icon" />
                           </td>
                           <!-- /standard article icon -->
                           <!-- standard article heading text -->
@@ -282,7 +282,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                     <!-- /standard article textarea -->
                     <!-- standard article main image: hidden in mobile version - must be 280px width (height can be variable) -->
                     <td class="hide">
-                      <img style="margin-bottom:1em;" src="img/large-photo-example-r.jpg" width="280" height="252" alt="" />
+                      <img style="margin-bottom:1em;" src="img/large-photo-example-r.jpg" width="280" height="240" border="0" alt="" />
                     </td>
                     <!-- /standard article main image -->
                   </tr>
@@ -295,7 +295,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                   <tr valign="top">
                     <!-- standard article main image: hidden in mobile version - must be 280px width (height can be variable) -->
                     <td class="hide">
-                      <img style="margin-bottom:1em;" src="img/large-photo-example-l.jpg" width="280" height="252" alt="" />
+                      <img style="margin-bottom:1em;" src="img/large-photo-example-l.jpg" width="280" height="240" border="0" alt="" />
                     </td>
                     <!-- /standard article main image -->
                     <!-- standard article textarea -->
@@ -304,7 +304,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                         <tr valign="top">
                           <!-- standard article icon -->
                           <td width="65">
-                            <img src="img/rose-red.gif" width="60" height="60" alt="Icon" />
+                            <img src="img/rose-red.gif" width="60" height="60" border="0" alt="Icon" />
                           </td>
                           <!-- /standard article icon -->
                           <!-- standard article heading text -->
@@ -338,12 +338,12 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                         <tr valign="top">
                           <!-- blank cell - do not use for content -->
                           <td bgcolor="#e0dbcf" height="18">
-                            <img src="img/blank.gif" width="1" height="1" alt="" />
+                            <img src="img/blank.gif" width="1" height="1" border="0" alt="" />
                           </td>
                           <!-- /blank cell -->
                           <!-- secondary article (120px image) main image -->
                           <td width="120" rowspan="2">
-                            <a href="{*WINNERSLINK*}" target="_blank"><img src="img/small-photo.jpg" width="120" height="90" alt="" /></a>
+                            <a href="{*WINNERSLINK*}" target="_blank"><img src="img/small-photo.jpg" width="120" height="90" border="0" alt="" /></a>
                           </td>
                           <!-- /secondary article (120px image) main image -->
                         </tr>
@@ -353,14 +353,14 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                               <tr>
                                 <!-- blank cell - do not use for content -->
                                 <td height="10" colspan="2">
-                                  <img src="img/blank.gif" width="1" height="1" alt="" />
+                                  <img src="img/blank.gif" width="1" height="1" border="0" alt="" />
                                 </td>
                                 <!-- /blank cell -->
                               </tr>
                               <tr>
                                 <!-- blank cell - do not use for content -->
                                 <td width="10">
-                                  <img src="img/blank.gif" width="1" height="1" alt="" />
+                                  <img src="img/blank.gif" width="1" height="1" border="0" alt="" />
                                 </td>
                                 <!-- /blank cell -->
                                 <!-- secondary article (120px image) heading text -->
@@ -377,7 +377,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                         <tr valign="top" class="hide">
                           <!-- blank cell - do not use for content -->
                           <td bgcolor="#e0dbcf" height="18">
-                            <img src="img/blank.gif" width="1" height="1" alt="" />
+                            <img src="img/blank.gif" width="1" height="1" border="0" alt="" />
                           </td>
                           <!-- /blank cell -->
                         </tr>
@@ -399,7 +399,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                   </tr>
                   <tr>
                     <td>
-                      <img src="img/pagetear.gif" width="560" height="20" alt="" class="pagetear" />
+                      <img src="img/pagetear.gif" width="560" height="20" border="0" alt="" class="pagetear" />
                     </td>
                   </tr>
                 </table>
@@ -429,9 +429,9 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                         <tr>
                           <td style="color:#ffffff;">
                             <p>
-                              <a href="#" target="_blank"><img style="margin-right:1em;" align="left" src="http://placehold.it/32x32" width="32" height="32" alt="Facebook" /></a>
-                              <a href="#" target="_blank"><img style="margin-right:1em;" align="left" src="http://placehold.it/32x32" width="32" height="32" alt="Twitter" /></a>
-                              <a href="#" target="_blank"><img style="margin-right:1em;" align="left" src="http://placehold.it/32x32" width="32" height="32" alt="YouTube" /></a>
+                              <a href="#" target="_blank"><img style="margin-right:1em;" align="left" src="http://placehold.it/32x32" width="32" height="32" border="0" alt="Facebook" /></a>
+                              <a href="#" target="_blank"><img style="margin-right:1em;" align="left" src="http://placehold.it/32x32" width="32" height="32" border="0" alt="Twitter" /></a>
+                              <a href="#" target="_blank"><img style="margin-right:1em;" align="left" src="http://placehold.it/32x32" width="32" height="32" border="0" alt="YouTube" /></a>
                             </p>
                           </td>
                         </tr>
