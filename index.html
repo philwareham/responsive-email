@@ -27,7 +27,7 @@
     body {margin:0; padding:0;}
 
     /* Resolves webkit padding issue. */
-    table {border-spacing: 0;}
+    table {border-spacing:0;}
 
     /* Resolves the Outlook 2007, 2010, and Gmail td padding issue. */
     table td {border-collapse:collapse;}
@@ -124,9 +124,7 @@
     /*** END EDITABLE STYLES ***/
 
 
-
-
-    /****** TEMPORARY - THESE WILL BE MOVED INLINE AT END OF DEVELOPMENT PROCESS ********/
+    /****** TEMPORARY - THESE SHOULD BE MOVED INLINE AT END OF YOUR DEVELOPMENT PROCESS ********/
 
     h1 {font-size:26px; line-height:1.11538461538462; font-weight:normal; margin-top:0; margin-bottom:0;}
 
@@ -134,9 +132,8 @@
 
     img {display:block; border:none; outline:none; text-decoration:none;}
 
-    .right {margin-left:1em; margin-bottom:1em;}
-    .left {margin-right:1em; margin-bottom:1em;}
-
+	/* Remove spacing around Outlook 07, 10 tables */
+    table {border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;}
 
     /*** END TEMPORARY ***/
   </style>
