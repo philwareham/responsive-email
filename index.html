@@ -134,13 +134,10 @@ a:hover {
 
     /* Target mobile devices. */
     /* @media only screen and (max-device-width: 639px) { */
-    @media only screen and (max-width: 639px) { /* TEMPORARY */
+    @media only screen and (max-width: 480px) { /* TEMPORARY */
 /* Hide elements at smaller screen sizes (!important needed to override inline CSS). */
       body[yahoo] .hide {
 	display:none !important;
-}
-body[yahoo] img.show {
-	display:block !important;
 }
 /* Adjust table widths at smaller screen sizes. */
       body[yahoo] .table {
@@ -148,6 +145,10 @@ body[yahoo] img.show {
 }
 body[yahoo] .innertable {
 	width:280px !important;
+}
+body[yahoo] .subtable {
+	margin: 1em !important;
+	margin-bottom: 1.6em !important;
 }
 /* Resize hero image at smaller screen sizes. */
       body[yahoo] .heroimage {
@@ -176,56 +177,9 @@ body[yahoo] .footer-right img {
     /* @media only screen and (min-device-width: 640px) and (max-device-width: 1024px) { */
     @media only screen and (min-width: 640px) and (max-width: 1024px) { /* TEMPORARY */
 }
-/* Target double pixel-ratio devices.*/
+/****** TEMPORARY - THESE SHOULD BE MOVED INLINE AT END OF YOUR DEVELOPMENT PROCESS ********/
 
-@media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-	      
-      /* Hide elements at smaller screen sizes (!important needed to override inline CSS). */
-      body[yahoo] .hide {
-display:none !important;
-}
- body[yahoo] img.show {
-display:block !important;
-}
-
-      /* Adjust table widths at smaller screen sizes. */
-      body[yahoo] .table {
-width:600px !important;
-}
- body[yahoo] .innertable {
-width:580px !important;
-}
-
-      /* Resize hero image at smaller screen sizes. */
-      body[yahoo] .heroimage {
-width:580px !important;
-height:580px !important;
-}
-
-      /* Resize page shadow at smaller screen sizes. */
-      body[yahoo] .shadow {
-width:580px !important;
-height:10px !important;
-}
-
-      /* Collapse footer columns. */
-      body[yahoo] .footer-left {
-width:580px !important;
-}
- body[yahoo] .footer-right {
-width:580px !important;
-}
- body[yahoo] .footer-right img {
-float:left !important;
-margin:0 1em 0 0 !important;
-}
-}
-/*** END EDITABLE STYLES ***/
-
-
-    /****** TEMPORARY - THESE SHOULD BE MOVED INLINE AT END OF YOUR DEVELOPMENT PROCESS ********/
-
-    h1 {
+h1 {
 	font-size:26px;
 	line-height:1.11538461538462;
 	font-weight:normal;
@@ -345,10 +299,10 @@ The yahoo attribute is added if you are using media queries for mobile devices (
               
               <table width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable" style="margin-bottom:1em;" >
                 <tr valign="top"> 
-                  <!-- standard article textarea -->
-                  <td>
-                  <table width="270" cellpadding="0" cellspacing="0" border="0" style="margin-right:10px;">
-                    <tr valign="top"> 
+                 <!-- standard article textarea -->
+                 <td class="hide">
+                 <table width="270" cellpadding="0" cellspacing="0" border="0" style="margin-right:10px;" align="left">
+                      <tr valign="top">
                         <td><img style="margin-bottom:1em; display:none !important" src="http://www.placehold.it/270x270/dedede/ffffff&text=hero+2col+image" width="280" height="280" border="0" alt="" class="show" />
                           <h1 style="color:#434343; margin-bottom:10px;"><a style="color:#434343;" href="#" target="_blank">White Porcelain Butterfly Vase</a></h1></td>
                         <!-- /standard article icon --> 
@@ -364,64 +318,25 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                         <td><a href="#" style="background-color:#129CB2; width:92%; display:block; height:100%; min-height:100%; color:#FFFFFF; padding:10px; text-align:center; margin:0 auto; ">SHOP NOW</a></td>
                       </tr>
                     </table>
-                  </td>
-                  <td class="hide">
-                  <table width="270" cellpadding="0" cellspacing="0" border="0" style="margin-left:10px;">
+                    <table width="270" cellpadding="0" cellspacing="0" border="0" style="margin-left:10px;" align="right">
                       <tr valign="top"> 
                         <!-- standard article icon -->
                         <td><img style="margin-bottom:1em;" src="http://www.placehold.it/270x270/dedede/ffffff&text=hero+2col+image" width="270" height="270" border="0" alt="" /></td>
                         <!-- standard article heading text --> 
                       </tr>
-                    </table>
-                  </td><!-- /standard article textarea --> 
+                    </table></td>
+                  <!-- /standard article textarea --> 
                 </tr>
               </table>
               
-              <!-- /standard article (left text) -->
-              
-              <!-- 1col article right -->
-              
-              <table width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable" style="margin-bottom:1em;" >
-                <tr valign="top"> 
-                  <!-- standard article textarea -->
-                  <td class="hide"><table width="270" cellpadding="0" cellspacing="0" border="0" style="margin-right:10px;">
-                      <tr valign="top"> 
-                        <!-- standard article icon -->
-                        <td ><img style="margin-bottom:1em;" src="http://www.placehold.it/270x270/dedede/ffffff&text=hero+2col+image" width="270" height="270" border="0" alt="" /></td>
-                        <!-- standard article heading text --> 
-                      </tr>
-                    </table>
-                  </td>
-                  <td>
-                  <table width="270" cellpadding="0" cellspacing="0" border="0" style="margin-left:10px;">
-                    <tr valign="top"> 
-                        <td><img style="margin-bottom:1em; display:none !important" src="http://www.placehold.it/270x270/dedede/ffffff&text=hero+2col+image" width="280" height="280" border="0" alt="" class="show" />
-                          <h1 style="color:#434343; margin-bottom:10px;"><a style="color:#434343;" href="#" target="_blank">White Porcelain Butterfly Vase</a></h1></td>
-                        <!-- /standard article icon --> 
-                        <!-- standard article heading text --> 
-                      </tr>
-                      <tr valign="top">
-                        <td><p style="margin-top:0; margin-bottom:0;">by Victoria Jill £85</p></td>
-                      </tr>
-                      <tr valign="top">
-                        <td><p style="margin-top:10px; margin-bottom:10px;">And some nice quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essein here os decrive the product...</p></td>
-                      </tr>
-                      <tr valign="top">
-                        <td><a href="#" style="background-color:#129CB2; width:92%; display:block; height:100%; min-height:100%; color:#FFFFFF; padding:10px; text-align:center; margin:0 auto; ">SHOP NOW</a></td>
-                      </tr>
-                    </table>
-                  </td><!-- /standard article textarea --> 
-                </tr>
-              </table>
-              
-              <!-- /1col article right -->
+              <!-- /standard article (left text) --> 
               
               <!-- 2col article -->
               
               <table width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable" style="margin-bottom:1em;" >
                 <tr valign="top"> 
                   <!-- standard article textarea -->
-                  <td><table width="270" cellpadding="0" cellspacing="0" border="0" style="margin-right:10px;">
+                  <td><table width="270" cellpadding="0" cellspacing="0" border="0" style="margin-right:10px;" align="left" class="subtable">
                       <tr valign="top"> 
                         <!-- standard article icon -->
                         <td><img style="margin-bottom:1em;" src="http://www.placehold.it/270x270/dedede/ffffff&text=hero+2col+image" width="270" height="270" border="0" alt="" />
@@ -436,8 +351,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                         <td><a href="#" style="background-color:#129CB2; width:92%; display:block; height:100%; min-height:100%; color:#FFFFFF; padding:10px; text-align:center; margin:0 auto; ">SHOP NOW</a></td>
                       </tr>
                     </table>
-                  </td>
-                  <td><table width="270" cellpadding="0" cellspacing="0" border="0" style="margin-left:10px;">
+                    <table width="270" cellpadding="0" cellspacing="0" border="0" style="margin-left:10px;" align="right" class="subtable">
                       <tr valign="top"> 
                         <!-- standard article icon -->
                         <td><img style="margin-bottom:1em;" src="http://www.placehold.it/270x270/dedede/ffffff&text=hero+2col+image" width="270" height="270" border="0" alt="" />
@@ -456,7 +370,41 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                 </tr>
               </table>
               
-              <!-- /2col article --> 
+              <!-- /2col article -->
+              
+              <!-- 1col article right -->
+              
+              <table width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable" style="margin-bottom:1em;" >
+                <tr valign="top">
+                  <td><table width="270" cellpadding="0" cellspacing="0" border="0" style="margin-right:10px;" align="left">
+                      <tr valign="top"> 
+                        <!-- standard article icon -->
+                        <td ><img style="margin-bottom:1em;" src="http://www.placehold.it/270x270/dedede/ffffff&text=hero+2col+image" width="270" height="270" border="0" alt="" /></td>
+                        <!-- standard article heading text --> 
+                      </tr>
+                    </table>
+                    <table width="270" cellpadding="0" cellspacing="0" border="0" style="margin-left:10px;" align="right">
+                      <tr valign="top">
+                        <td><img style="margin-bottom:1em; display:none !important" src="http://www.placehold.it/270x270/dedede/ffffff&text=hero+2col+image" width="280" height="280" border="0" alt="" class="show" />
+                          <h1 style="color:#434343; margin-bottom:10px;"><a style="color:#434343;" href="#" target="_blank">White Porcelain Butterfly Vase</a></h1></td>
+                        <!-- /standard article icon --> 
+                        <!-- standard article heading text --> 
+                      </tr>
+                      <tr valign="top">
+                        <td><p style="margin-top:0; margin-bottom:0;">by Victoria Jill £85</p></td>
+                      </tr>
+                      <tr valign="top">
+                        <td><p style="margin-top:10px; margin-bottom:10px;">And some nice quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essein here os decrive the product...</p></td>
+                      </tr>
+                      <tr valign="top">
+                        <td><a href="#" style="background-color:#129CB2; width:92%; display:block; height:100%; min-height:100%; color:#FFFFFF; padding:10px; text-align:center; margin:0 auto; ">SHOP NOW</a></td>
+                      </tr>
+                    </table></td>
+                  <!-- /standard article textarea --> 
+                </tr>
+              </table>
+              
+              <!-- /1col article right --> 
               
               <!-- secondary article (short story) -->
               
