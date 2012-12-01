@@ -7,3 +7,7 @@ A table-based (but responsive) email template. Has MailChimp merge tags in place
 * "MailChimp Email Blueprints":https://github.com/mailchimp/Email-Blueprints
 
 h3. More info and development to come
+
+h2. License
+
+Released under "MIT licence":http://www.opensource.org/licenses/mit-license.php.
