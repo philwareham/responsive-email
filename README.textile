@@ -8,6 +8,8 @@ A table-based (but responsive) email template. Has MailChimp merge tags in place
 
 h2. Images
 
+Some of the images used within this template are created at double-resolution to give a crisp display on HiDPI screens (such as iPhone4 onwards) - please bear in mind this will require extra bandwidth. If you are optimising for lower bandwidths you may want to use standard resolution images instead. Also, images hidden using @display:none;@ do still load, even though they are not displayed.
+
 Make sure you link all your images using full URL paths, and upload them to a suitable webspace, or upload/link via your email transmission service.
 
 h2. License
