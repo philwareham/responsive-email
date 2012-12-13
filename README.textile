@@ -6,7 +6,9 @@ A table-based (but responsive) email template. Has MailChimp merge tags in place
 * "Email Boilerplate":https://github.com/seanpowell/Email-Boilerplate
 * "MailChimp Email Blueprints":https://github.com/mailchimp/Email-Blueprints
 
-h3. More info and development to come
+h2. Images
+
+Make sure you link all your images using full URL paths, and upload them to a suitable webspace, or upload/link via your email transmission service.
 
 h2. License
 
