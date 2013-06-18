@@ -14,4 +14,4 @@ Make sure you link all your images using full URL paths, and upload them to a su
 
 h2. License
 
-Released under "MIT licence":http://www.opensource.org/licenses/mit-license.php.
+Released under "MIT license":http://opensource.org/licenses/mit-license.html
