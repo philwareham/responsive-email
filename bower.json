@@ -1,5 +1,6 @@
 {
   "name": "responsive-email",
   "version": "1.0.0",
-  "author": "Phil Wareham"
+  "author": "Phil Wareham",
+  "description": "A table-based (but responsive) email template"
 }
