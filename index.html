@@ -110,10 +110,11 @@
 			/* Resize page shadow at smaller screen sizes. */
 			body[yahoo] .shadow {width:280px !important; height:4px !important;}
 
-			/* Collapse footer columns. */
-			body[yahoo] .footer-left	{width:320px !important;}
-			body[yahoo] .footer-right {width:320px !important;}
-			body[yahoo] .footer-right img {float:left !important; margin:0 1em 0 0 !important;}
+			/* Collapse cells at smaller screen sizes. */
+			body[yahoo] .collapse-cell {width:320px !important;}
+
+			/* Range social icons left at smaller screen sizes. */
+			body[yahoo] .social-media img {float:left !important; margin:0 1em 0 0 !important;}
 
 		}
 
@@ -193,16 +194,16 @@ The yahoo attribute is added if you are using media queries for mobile devices (
 						<tr>
 							<td>
 								<!-- set a value for bgcolor -->
-								<table bgcolor="#cccccc" text="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0">	
+								<table bgcolor="#cccccc" width="100%" cellpadding="0" cellspacing="0" border="0">	
 									<tr>
 										<!-- header left: logo and link to homepage -->
-										<td width="320" valign="top">
+										<td width="320">
 											<!-- set an image for header left - must be 320px width (height can be variable) -->
 											<a href="#" target="_blank"><img src="img/header-l.gif" width="320" height="60" border="0" alt="Header (left)" /></a>
 										</td>
 										<!-- /header left -->
 										<!-- header right: hidden in mobile version -->
-										<td width="280" valign="top" class="hide">
+										<td width="280" class="hide">
 											<!-- set an image for header right - must be 280px width (height can be variable) -->
 											<img src="img/header-r.gif" width="280" height="60" border="0" alt="Header (right)" />
 										</td>
@@ -225,7 +226,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
 									<tr>
 										<!-- hero article textarea -->
 										<td>
-											<table bgcolor="#ffffff" width="100%" cellpadding="10" cellspacing="0" border="0">
+											<table width="100%" cellpadding="10" cellspacing="0" border="0">
 												<tr>
 													<td>
 														<!-- hero article heading text -->
@@ -443,21 +444,21 @@ The yahoo attribute is added if you are using media queries for mobile devices (
 						<!-- FOOTER -->
 						<tr>
 							<td>
-								<table bgcolor="#cccccc" text="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0">
+								<table bgcolor="#cccccc" width="100%" cellpadding="0" cellspacing="0" border="0">
 									<tr>
 										<td>
-											<table align="left" bgcolor="#cccccc" text="#333333" width="280" cellpadding="10" cellspacing="0" border="0" class="footer-left">
+											<table align="left" width="280" cellpadding="10" cellspacing="0" border="0" class="collapse-cell">
 												<tr>
-													<td style="color:#333333;">
+													<td>
 														<p><a href="*|FORWARD|*" target="_blank" style="color:#114eb1; text-decoration:none;">Send to a friend</a> <span style="color:#666666;">&#124;</span> <a href="*|LIST:URL|*" target="_blank" style="color:#114eb1; text-decoration:none;">Contact us</a><br />
 															 <a href="*|UPDATE_PROFILE|*" target="_blank" style="color:#114eb1; text-decoration:none;">Update profile</a> <span style="color:#666666;">&#124;</span> <a href="*|UNSUB|*" target="_blank" style="color:#114eb1; text-decoration:none;">Unsubscribe</a></p>
 													</td>
 												</tr>
 											</table>
-											<table align="right" bgcolor="#cccccc" text="#333333" width="280" cellpadding="10" cellspacing="0" border="0" class="footer-right">
+											<table align="right" width="280" cellpadding="10" cellspacing="0" border="0" class="collapse-cell">
 												<tr>
-													<td style="color:#333333;">
-														<p>
+													<td>
+														<p class="social-media">
 															<a href="#" target="_blank"><img style="margin-left:1em;" align="right" src="img/facebook.gif" width="32" height="32" border="0" alt="Facebook" /></a>
 															<a href="#" target="_blank"><img style="margin-left:1em;" align="right" src="img/googleplus.gif" width="32" height="32" border="0" alt="Google+" /></a>
 															<a href="#" target="_blank"><img style="margin-left:1em;" align="right" src="img/linkedin.gif" width="32" height="32" border="0" alt="LinkedIn" /></a>
