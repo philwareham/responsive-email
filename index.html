@@ -1,142 +1,142 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
-	<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-	<title>*|MC:SUBJECT|*</title>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>*|MC:SUBJECT|*</title>
 
-	<!-- Facebook sharing information tags -->
-	<meta property="og:title" content="*|MC:SUBJECT|*" />
+    <!-- Facebook sharing information tags -->
+    <meta property="og:title" content="*|MC:SUBJECT|*" />
 
-	<style type="text/css">
-		/* EMBEDDED CSS
-		   Android Mail doesn't support "class" declarations outside of a media query so use inline CSS as a rule.
-		   More info: Http://www.emailonacid.com/blog/the_android_mail_app_and_css_class_declarations/ */
-
-
-		/****** EMAIL CLIENT BUG FIXES - BEST NOT TO CHANGE THESE ********/
+    <style type="text/css">
+        /* EMBEDDED CSS
+           Android Mail doesn't support "class" declarations outside of a media query so use inline CSS as a rule.
+           More info: Http://www.emailonacid.com/blog/the_android_mail_app_and_css_class_declarations/ */
 
 
-		/* Forces Hotmail to display emails at full width. */
-		.ExternalClass {width:100%;}
-
-		/* Forces Hotmail to display normal line spacing. */
-		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
-
-		/* Prevents Webkit and Windows Mobile platforms from changing default font sizes. */
-		body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none;}
-
-		/* Resets all body margins and padding to "0" for good measure. */
-		body {margin:0; padding:0;}
-
-		/* Resolves webkit padding issue. */
-		table {border-spacing:0;}
-
-		/* Resolves the Outlook 2007, 2010, and Gmail td padding issue. */
-		table td {border-collapse:collapse;}
+        /****** EMAIL CLIENT BUG FIXES - BEST NOT TO CHANGE THESE ********/
 
 
-		/****** END BUG FIXES ********/
+        /* Forces Hotmail to display emails at full width. */
+        .ExternalClass {width:100%;}
+
+        /* Forces Hotmail to display normal line spacing. */
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
+
+        /* Prevents Webkit and Windows Mobile platforms from changing default font sizes. */
+        body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none;}
+
+        /* Resets all body margins and padding to "0" for good measure. */
+        body {margin:0; padding:0;}
+
+        /* Resolves webkit padding issue. */
+        table {border-spacing:0;}
+
+        /* Resolves the Outlook 2007, 2010, and Gmail td padding issue. */
+        table td {border-collapse:collapse;}
 
 
-		/****** RESETTING DEFAULTS, IT IS BEST TO OVERWRITE THESE STYLES INLINE ********/
+        /****** END BUG FIXES ********/
 
 
-		/* This sets a clean slate for all clients EXCEPT Gmail.
-		   From there it forces you to do all of your spacing inline during the development process.
-		   Be sure to stick to margins because paragraph padding is not supported by Outlook 2007/2010.
-		   Remember: Hotmail does not support "margin" nor the "margin-top" properties.
-		   Stick to "margin-bottom", "margin-left", "margin-right" in order to control spacing.
-		   It also wise to set the inline top-margin to "0" for consistancy in Gmail for every inline instance
-		   of a paragraph tag. */	
-		p {margin:0; padding:0; margin-bottom:0;}
-
-		/* This CSS will overwrite Hotmails default CSS and make your headings appear consistant with Gmail.
-		   From there, you can override with inline CSS if needed. */
-		h1, h2, h3, h4, h5, h6 {color:#333333; line-height:100%;}
+        /****** RESETTING DEFAULTS, IT IS BEST TO OVERWRITE THESE STYLES INLINE ********/
 
 
-		/****** END RESETTING DEFAULTS ********/
+        /* This sets a clean slate for all clients EXCEPT Gmail.
+           From there it forces you to do all of your spacing inline during the development process.
+           Be sure to stick to margins because paragraph padding is not supported by Outlook 2007/2010.
+           Remember: Hotmail does not support "margin" nor the "margin-top" properties.
+           Stick to "margin-bottom", "margin-left", "margin-right" in order to control spacing.
+           It also wise to set the inline top-margin to "0" for consistancy in Gmail for every inline instance
+           of a paragraph tag. */
+        p {margin:0; padding:0; margin-bottom:0;}
+
+        /* This CSS will overwrite Hotmails default CSS and make your headings appear consistant with Gmail.
+           From there, you can override with inline CSS if needed. */
+        h1, h2, h3, h4, h5, h6 {color:#333333; line-height:100%;}
 
 
-		/****** EDITABLE STYLES - FOR YOUR TEMPLATE ********/
+        /****** END RESETTING DEFAULTS ********/
 
 
-		/* The "body" is defined here for Yahoo Beta because it does not support your body tag. Instead, it will
-		   create a wrapper div around your email and that div will inherit your embedded body styles.
-		   The "#body_style" is defined for AOL because it does not support your embedded body definition nor
-		   your body tag, we will use this class in our wrapper div. */
-		body, #body_style {width:100% !important; min-height:1000px; color:#333333; background:#e0dbcf; font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:1.4;}
-
-		/* This is the embedded CSS link color for Gmail. This will overwrite Hotmail and Yahoo Beta's
-		   embedded link colors and make it consistent with Gmail. Also use this rule on inline CSS. */
-		a		 {color:#114eb1; text-decoration:none;}
-
-		/* There is no way to set these inline so you have the option of adding pseudo class definitions here.
-		   They won't work for Gmail or older Lotus Notes but it's a nice addition for all other clients. */
-		a:link	{color:#114eb1; text-decoration:none;}
-		a:visited {color:#183082; text-decoration:none;}
-		a:focus   {color:#0066ff !important;}
-		a:hover   {color:#0066ff !important;}
-
-		/* A nice and clean way to target phone numbers you want clickable and avoid a mobile phone from
-		   linking other numbers that look like, but are not phone numbers. Use these two blocks of code to
-		   "unstyle" any numbers that may be linked. The second block gives you a class ".mobile_link" to apply
-		   with a span tag to the numbers you would like linked and styled.
-		   More info: http://www.campaignmonitor.com/blog/post/3571/using-phone-numbers-in-html-email/ */
-		a[href^="tel"], a[href^="sms"] {text-decoration:none; color:#333333; pointer-events:none; cursor:default;}
-		.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {text-decoration:default; color:#6e5c4f !important; pointer-events:auto; cursor:default;}
+        /****** EDITABLE STYLES - FOR YOUR TEMPLATE ********/
 
 
-		/****** MEDIA QUERIES ********/
-		/* You must use attribute selectors in your media queries to prevent Yahoo from rendering these styles.	
-		   We added a yahoo attribute in the body tag to complete this fix. 
-		   More info: http://www.emailonacid.com/blog/details/C13/stop_yahoo_mail_from_rendering_your_media_queries */
+        /* The "body" is defined here for Yahoo Beta because it does not support your body tag. Instead, it will
+           create a wrapper div around your email and that div will inherit your embedded body styles.
+           The "#body_style" is defined for AOL because it does not support your embedded body definition nor
+           your body tag, we will use this class in our wrapper div. */
+        body, #body_style {width:100% !important; min-height:1000px; color:#333333; background:#e0dbcf; font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:1.4;}
 
-		/* Target mobile devices. */
-		/* @media only screen and (max-device-width: 639px) { */
-		@media only screen and (max-width: 639px) {
-			
-			/* Hide elements at smaller screen sizes (!important needed to override inline CSS). */
-			body[yahoo] .hide {display:none !important;}
+        /* This is the embedded CSS link color for Gmail. This will overwrite Hotmail and Yahoo Beta's
+           embedded link colors and make it consistent with Gmail. Also use this rule on inline CSS. */
+        a         {color:#114eb1; text-decoration:none;}
 
-			/* Adjust table widths at smaller screen sizes. */
-			body[yahoo] .table {width:320px !important;}
-			body[yahoo] .innertable {width:280px !important;}
+        /* There is no way to set these inline so you have the option of adding pseudo class definitions here.
+           They won't work for Gmail or older Lotus Notes but it's a nice addition for all other clients. */
+        a:link    {color:#114eb1; text-decoration:none;}
+        a:visited {color:#183082; text-decoration:none;}
+        a:focus   {color:#0066ff !important;}
+        a:hover   {color:#0066ff !important;}
 
-			/* Resize hero image at smaller screen sizes. */
-			body[yahoo] .heroimage {width:280px !important; height:100px !important;}
-
-			/* Resize page shadow at smaller screen sizes. */
-			body[yahoo] .shadow {width:280px !important; height:4px !important;}
-
-			/* Collapse cells at smaller screen sizes. */
-			body[yahoo] .collapse-cell {width:320px !important;}
-
-			/* Range social icons left at smaller screen sizes. */
-			body[yahoo] .social-media img {float:left !important; margin:0 1em 0 0 !important;}
-
-		}
-
-		/* Target tablet devices. */
-		/* @media only screen and (min-device-width: 640px) and (max-device-width: 1024px) { */
-		@media only screen and (min-width: 640px) and (max-width: 1024px) {
-
-		}
+        /* A nice and clean way to target phone numbers you want clickable and avoid a mobile phone from
+           linking other numbers that look like, but are not phone numbers. Use these two blocks of code to
+           "unstyle" any numbers that may be linked. The second block gives you a class ".mobile_link" to apply
+           with a span tag to the numbers you would like linked and styled.
+           More info: http://www.campaignmonitor.com/blog/post/3571/using-phone-numbers-in-html-email/ */
+        a[href^="tel"], a[href^="sms"] {text-decoration:none; color:#333333; pointer-events:none; cursor:default;}
+        .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {text-decoration:default; color:#6e5c4f !important; pointer-events:auto; cursor:default;}
 
 
-		/*** END EDITABLE STYLES ***/
+        /****** MEDIA QUERIES ********/
+        /* You must use attribute selectors in your media queries to prevent Yahoo from rendering these styles.    
+           We added a yahoo attribute in the body tag to complete this fix. 
+           More info: http://www.emailonacid.com/blog/details/C13/stop_yahoo_mail_from_rendering_your_media_queries */
+
+        /* Target mobile devices. */
+        /* @media only screen and (max-device-width: 639px) { */
+        @media only screen and (max-width: 639px) {
+
+            /* Hide elements at smaller screen sizes (!important needed to override inline CSS). */
+            body[yahoo] .hide {display:none !important;}
+
+            /* Adjust table widths at smaller screen sizes. */
+            body[yahoo] .table {width:320px !important;}
+            body[yahoo] .innertable {width:280px !important;}
+
+            /* Resize hero image at smaller screen sizes. */
+            body[yahoo] .heroimage {width:280px !important; height:100px !important;}
+
+            /* Resize page shadow at smaller screen sizes. */
+            body[yahoo] .shadow {width:280px !important; height:4px !important;}
+
+            /* Collapse cells at smaller screen sizes. */
+            body[yahoo] .collapse-cell {width:320px !important;}
+
+            /* Range social icons left at smaller screen sizes. */
+            body[yahoo] .social-media img {float:left !important; margin:0 1em 0 0 !important;}
+
+        }
+
+        /* Target tablet devices. */
+        /* @media only screen and (min-device-width: 640px) and (max-device-width: 1024px) { */
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+
+        }
 
 
-		/****** TEMPORARY - THESE SHOULD BE MOVED INLINE AT END OF YOUR DEVELOPMENT PROCESS ********/
+        /*** END EDITABLE STYLES ***/
 
-		img {display:block; border:none; outline:none; text-decoration:none;}
 
-		/* Remove spacing around Outlook 07, 10 tables */
-		table {border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;}
+        /****** TEMPORARY - THESE SHOULD BE MOVED INLINE AT END OF YOUR DEVELOPMENT PROCESS ********/
 
-		/*** END TEMPORARY ***/
-	</style>
+        img {display:block; border:none; outline:none; text-decoration:none;}
+
+        /* Remove spacing around Outlook 07, 10 tables */
+        table {border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;}
+
+        /*** END TEMPORARY ***/
+    </style>
 
 
 </head>
@@ -156,341 +156,341 @@ The "min-height" attribute is set for Gmail and AOL since they will be convertin
 background color to reach the bottom of the page. 
 
 The yahoo attribute is added if you are using media queries for mobile devices (see media queries above) -->
-	
+    
 <!-- PAGE WRAPPER -->
-	<div id="body_style"> 
+    <div id="body_style"> 
 
 
-		<!-- Wrapper/Container Table: Use a wrapper table to control the width and the background color consistently of your email. Use this approach instead of setting attributes on the body tag. -->
-		<table cellpadding="0" cellspacing="0" border="0" align="center" style="width:100% !important; margin:0; padding:0;">
-			<tr bgcolor="#f0f0f0">
-				<td>
+        <!-- Wrapper/Container Table: Use a wrapper table to control the width and the background color consistently of your email. Use this approach instead of setting attributes on the body tag. -->
+        <table cellpadding="0" cellspacing="0" border="0" align="center" style="width:100% !important; margin:0; padding:0;">
+            <tr bgcolor="#f0f0f0">
+                <td>
 
 
-					<!-- Tables are the most common way to format your email consistently. Set your table widths inside cells and in most cases reset cellpadding, cellspacing, and border to zero. Use nested tables as a way to space effectively in your message. -->
-					<table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="table">
+                    <!-- Tables are the most common way to format your email consistently. Set your table widths inside cells and in most cases reset cellpadding, cellspacing, and border to zero. Use nested tables as a way to space effectively in your message. -->
+                    <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="table">
 
 
-						<!-- PREHEADER -->
-						<tr>
-							<td>
-								<table width="100%" cellpadding="10" cellspacing="0" border="0">
-									<tr>
-										<td valign="top" style="font-size:11px;">
-											Is this email not displaying correctly? <a href="*|ARCHIVE|*" target="_blank" style="color:#114eb1; text-decoration:none;">View it in your browser</a>.
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<!-- /PREHEADER -->
+                        <!-- PREHEADER -->
+                        <tr>
+                            <td>
+                                <table width="100%" cellpadding="10" cellspacing="0" border="0">
+                                    <tr>
+                                        <td valign="top" style="font-size:11px;">
+                                            Is this email not displaying correctly? <a href="*|ARCHIVE|*" target="_blank" style="color:#114eb1; text-decoration:none;">View it in your browser</a>.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- /PREHEADER -->
 
 
-						<!-- HEADER -->
-						<tr>
-							<td>
-								<!-- set a value for bgcolor -->
-								<table bgcolor="#cccccc" width="100%" cellpadding="0" cellspacing="0" border="0">	
-									<tr>
-										<!-- header left: logo and link to homepage -->
-										<td width="320">
-											<!-- set an image for header left - must be 320px width (height can be variable) -->
-											<a href="#" target="_blank"><img src="img/header-l.gif" width="320" height="60" border="0" alt="Header (left)" /></a>
-										</td>
-										<!-- /header left -->
-										<!-- header right: hidden in mobile version -->
-										<td width="280" class="hide">
-											<!-- set an image for header right - must be 280px width (height can be variable) -->
-											<img src="img/header-r.gif" width="280" height="60" border="0" alt="Header (right)" />
-										</td>
-										<!-- /header right -->
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<!-- /HEADER -->
+                        <!-- HEADER -->
+                        <tr>
+                            <td>
+                                <!-- set a value for bgcolor -->
+                                <table bgcolor="#cccccc" width="100%" cellpadding="0" cellspacing="0" border="0">    
+                                    <tr>
+                                        <!-- header left: logo and link to homepage -->
+                                        <td width="320">
+                                            <!-- set an image for header left - must be 320px width (height can be variable) -->
+                                            <a href="#" target="_blank"><img src="img/header-l.gif" width="320" height="60" border="0" alt="Header (left)" /></a>
+                                        </td>
+                                        <!-- /header left -->
+                                        <!-- header right: hidden in mobile version -->
+                                        <td width="280" class="hide">
+                                            <!-- set an image for header right - must be 280px width (height can be variable) -->
+                                            <img src="img/header-r.gif" width="280" height="60" border="0" alt="Header (right)" />
+                                        </td>
+                                        <!-- /header right -->
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- /HEADER -->
 
 
-						<!-- CONTENT -->
-						<!-- set a value for bgcolor -->
-						<tr bgcolor="#ffffff">
-							<td style="padding-top:20px;">
+                        <!-- CONTENT -->
+                        <!-- set a value for bgcolor -->
+                        <tr bgcolor="#ffffff">
+                            <td style="padding-top:20px;">
 
 
-								<!-- hero article -->
-								<table style="margin-bottom:1em;" width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable">
-									<tr>
-										<!-- hero article textarea -->
-										<td>
-											<table width="100%" cellpadding="10" cellspacing="0" border="0">
-												<tr>
-													<td>
-														<!-- hero article heading text -->
-														<h1 style="color:#666666; font-size:26px; line-height:1.2; font-weight:normal; margin-top:0; margin-bottom:0.5em;">Hi *|TITLE:FNAME|*</h1>
-														<!-- /hero article heading text -->
-														<!-- hero article paragraph text -->
-														<p style="margin-top:0; margin-bottom:0;">Lorem ipsum dolor sit amet, quo epicuri volutpat no. Causae option accusamus in est. Mea id ignota meliore facilis, cu vim omnium appareat mediocrem. Eu oblique voluptua electram his. Mei eu movet recteque. Vis nulla graeci praesent ad, mediocrem expetenda pro ad.</p>
-														<!-- /hero article paragraph text -->
-													</td>
-												</tr>
-											</table>
-										</td>
-										<!-- /hero article textarea -->
-									</tr>
-									<!-- hero article main image: must be 560px x 186px -->
-									<tr>
-										<td>
-											<img src="img/hero.jpg" width="560" height="200" border="0" alt="" class="heroimage" />
-										</td>
-									</tr>
-									<!-- /hero article main image -->
-									<tr>
-										<td>
-											<img src="img/shadow.gif" width="560" height="8" border="0" alt="" class="shadow" />
-										</td>
-									</tr>
-								</table>
-								<!-- /hero article -->
+                                <!-- hero article -->
+                                <table style="margin-bottom:1em;" width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable">
+                                    <tr>
+                                        <!-- hero article textarea -->
+                                        <td>
+                                            <table width="100%" cellpadding="10" cellspacing="0" border="0">
+                                                <tr>
+                                                    <td>
+                                                        <!-- hero article heading text -->
+                                                        <h1 style="color:#666666; font-size:26px; line-height:1.2; font-weight:normal; margin-top:0; margin-bottom:0.5em;">Hi *|TITLE:FNAME|*</h1>
+                                                        <!-- /hero article heading text -->
+                                                        <!-- hero article paragraph text -->
+                                                        <p style="margin-top:0; margin-bottom:0;">Lorem ipsum dolor sit amet, quo epicuri volutpat no. Causae option accusamus in est. Mea id ignota meliore facilis, cu vim omnium appareat mediocrem. Eu oblique voluptua electram his. Mei eu movet recteque. Vis nulla graeci praesent ad, mediocrem expetenda pro ad.</p>
+                                                        <!-- /hero article paragraph text -->
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <!-- /hero article textarea -->
+                                    </tr>
+                                    <!-- hero article main image: must be 560px x 186px -->
+                                    <tr>
+                                        <td>
+                                            <img src="img/hero.jpg" width="560" height="200" border="0" alt="" class="heroimage" />
+                                        </td>
+                                    </tr>
+                                    <!-- /hero article main image -->
+                                    <tr>
+                                        <td>
+                                            <img src="img/shadow.gif" width="560" height="8" border="0" alt="" class="shadow" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- /hero article -->
 
 
-								<!-- standard article (left text with icon - image hidden in mobile version) -->
-								<table width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable">
-									<tr valign="top">
-										<!-- standard article textarea -->
-										<td>
-											<table width="270" cellpadding="0" cellspacing="0" border="0">
-												<tr valign="top">
-													<!-- standard article icon -->
-													<td width="65">
-														<img src="img/icon.gif" width="60" height="60" border="0" alt="Icon" />
-													</td>
-													<!-- /standard article icon -->
-													<!-- standard article heading text -->
-													<td>
-														<h1 style="color:#666666; font-size:26px; line-height:1.2; font-weight:normal; margin-top:0; margin-bottom:0;"><a style="color:#114eb1;" href="#" target="_blank">HEADING</a></h1>
-													</td>
-													<!-- /standard article heading text -->
-												</tr>
-											</table>
-											<!-- standard article paragraph text -->
-											<table width="100%" cellpadding="10" cellspacing="0" border="0">
-												<tr valign="top">
-													<td>
-														<p style="margin-top:0; margin-bottom:0;">Timeam mentitum an nam. Mei ne prima perfecto adversarium. Quo eu tamquam invidunt verterem, albucius dissentiet ea eum. Facete fabellas referrentur et qui. Cu harum tempor vivendum vel. Nec quem movet nullam in. No stet tota pri.</p>
-													</td>
-												</tr>
-											</table>
-											<!-- /standard article paragraph text -->
-										</td>
-										<!-- /standard article textarea -->
-										<!-- standard article main image: hidden in mobile version - must be 280px width (height can be variable) -->
-										<td class="hide">
-											<img style="margin-bottom:1em;" src="img/large-photo-example-r.jpg" width="280" height="240" border="0" alt="" />
-										</td>
-										<!-- /standard article main image -->
-									</tr>
-								</table>
-								<!-- /standard article (left text) -->
+                                <!-- standard article (left text with icon - image hidden in mobile version) -->
+                                <table width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable">
+                                    <tr valign="top">
+                                        <!-- standard article textarea -->
+                                        <td>
+                                            <table width="270" cellpadding="0" cellspacing="0" border="0">
+                                                <tr valign="top">
+                                                    <!-- standard article icon -->
+                                                    <td width="65">
+                                                        <img src="img/icon.gif" width="60" height="60" border="0" alt="Icon" />
+                                                    </td>
+                                                    <!-- /standard article icon -->
+                                                    <!-- standard article heading text -->
+                                                    <td>
+                                                        <h1 style="color:#666666; font-size:26px; line-height:1.2; font-weight:normal; margin-top:0; margin-bottom:0;"><a style="color:#114eb1;" href="#" target="_blank">HEADING</a></h1>
+                                                    </td>
+                                                    <!-- /standard article heading text -->
+                                                </tr>
+                                            </table>
+                                            <!-- standard article paragraph text -->
+                                            <table width="100%" cellpadding="10" cellspacing="0" border="0">
+                                                <tr valign="top">
+                                                    <td>
+                                                        <p style="margin-top:0; margin-bottom:0;">Timeam mentitum an nam. Mei ne prima perfecto adversarium. Quo eu tamquam invidunt verterem, albucius dissentiet ea eum. Facete fabellas referrentur et qui. Cu harum tempor vivendum vel. Nec quem movet nullam in. No stet tota pri.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- /standard article paragraph text -->
+                                        </td>
+                                        <!-- /standard article textarea -->
+                                        <!-- standard article main image: hidden in mobile version - must be 280px width (height can be variable) -->
+                                        <td class="hide">
+                                            <img style="margin-bottom:1em;" src="img/large-photo-example-r.jpg" width="280" height="240" border="0" alt="" />
+                                        </td>
+                                        <!-- /standard article main image -->
+                                    </tr>
+                                </table>
+                                <!-- /standard article (left text) -->
 
 
-								<!-- standard article (right text with icon - image hidden in mobile version) -->
-								<table width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable">
-									<tr valign="top">
-										<!-- standard article main image: hidden in mobile version - must be 280px width (height can be variable) -->
-										<td class="hide">
-											<img style="margin-bottom:1em;" src="img/large-photo-example-l.jpg" width="280" height="240" border="0" alt="" />
-										</td>
-										<!-- /standard article main image -->
-										<!-- standard article textarea -->
-										<td>
-											<table width="270" cellpadding="0" cellspacing="0" border="0">
-												<tr valign="top">
-													<!-- standard article icon -->
-													<td width="65">
-														<img src="img/icon.gif" width="60" height="60" border="0" alt="Icon" />
-													</td>
-													<!-- /standard article icon -->
-													<!-- standard article heading text -->
-													<td>
-														<h1 style="color:#666666; font-size:26px; line-height:1.2; font-weight:normal; margin-top:0; margin-bottom:0;"><a style="color:#114eb1;" href="#" target="_blank">HEADING</a></h1>
-													</td>
-													<!-- /standard article heading text -->
-												</tr>
-											</table>
-											<!-- standard article paragraph text -->
-											<table width="100%" cellpadding="10" cellspacing="0" border="0">
-												<tr valign="top">
-													<td>
-														<p style="margin-top:0; margin-bottom:0;">Inermis indoctum vis in, has soleat complectitur te. Ut est stet civibus, mucius iriure ad duo. Sumo tantas et est, ea duo elitr utroque, ne mea dicant tincidunt scribentur. Sit dico accusata et. Sint inimicus cu nam, odio velit minim sit ut.</p>
-													</td>
-												</tr>
-											</table>
-											<!-- /standard article paragraph text -->
-										</td>
-										<!-- /standard article textarea -->
-									</tr>
-								</table>
-								<!-- /standard article (right text) -->
+                                <!-- standard article (right text with icon - image hidden in mobile version) -->
+                                <table width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable">
+                                    <tr valign="top">
+                                        <!-- standard article main image: hidden in mobile version - must be 280px width (height can be variable) -->
+                                        <td class="hide">
+                                            <img style="margin-bottom:1em;" src="img/large-photo-example-l.jpg" width="280" height="240" border="0" alt="" />
+                                        </td>
+                                        <!-- /standard article main image -->
+                                        <!-- standard article textarea -->
+                                        <td>
+                                            <table width="270" cellpadding="0" cellspacing="0" border="0">
+                                                <tr valign="top">
+                                                    <!-- standard article icon -->
+                                                    <td width="65">
+                                                        <img src="img/icon.gif" width="60" height="60" border="0" alt="Icon" />
+                                                    </td>
+                                                    <!-- /standard article icon -->
+                                                    <!-- standard article heading text -->
+                                                    <td>
+                                                        <h1 style="color:#666666; font-size:26px; line-height:1.2; font-weight:normal; margin-top:0; margin-bottom:0;"><a style="color:#114eb1;" href="#" target="_blank">HEADING</a></h1>
+                                                    </td>
+                                                    <!-- /standard article heading text -->
+                                                </tr>
+                                            </table>
+                                            <!-- standard article paragraph text -->
+                                            <table width="100%" cellpadding="10" cellspacing="0" border="0">
+                                                <tr valign="top">
+                                                    <td>
+                                                        <p style="margin-top:0; margin-bottom:0;">Inermis indoctum vis in, has soleat complectitur te. Ut est stet civibus, mucius iriure ad duo. Sumo tantas et est, ea duo elitr utroque, ne mea dicant tincidunt scribentur. Sit dico accusata et. Sint inimicus cu nam, odio velit minim sit ut.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- /standard article paragraph text -->
+                                        </td>
+                                        <!-- /standard article textarea -->
+                                    </tr>
+                                </table>
+                                <!-- /standard article (right text) -->
 
 
-								<!-- secondary article (short story) -->
-								<table bgcolor="#f6f4f1" style="margin-bottom:1em;" width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable">
-									<tr valign="top">
-										<td>
-											<table align="left" width="280" cellpadding="0" cellspacing="0" border="0">
-												<tr valign="top">
-													<!-- blank cell - do not use for content -->
-													<td bgcolor="#ffffff" height="18">
-														<img src="img/blank.gif" width="1" height="1" border="0" alt="" />
-													</td>
-													<!-- /blank cell -->
-													<!-- secondary article (120px image) main image -->
-													<td width="120" rowspan="2">
-														<a href="{*WINNERSLINK*}" target="_blank"><img src="img/secondary-article-short-story.jpg" width="120" height="90" border="0" alt="" /></a>
-													</td>
-													<!-- /secondary article (120px image) main image -->
-												</tr>
-												<tr valign="top">
-													<td>
-														<table width="160" cellpadding="0" cellspacing="0" border="0" style="padding-bottom:0;">
-															<tr>
-																<!-- blank cell - do not use for content -->
-																<td height="10" colspan="2">
-																	<img src="img/blank.gif" width="1" height="1" border="0" alt="" />
-																</td>
-																<!-- /blank cell -->
-															</tr>
-															<tr>
-																<!-- blank cell - do not use for content -->
-																<td width="10">
-																	<img src="img/blank.gif" width="1" height="1" border="0" alt="" />
-																</td>
-																<!-- /blank cell -->
-																<!-- secondary article (120px image) heading text -->
-																<td>
-																	<h1 style="color:#666666; font-size:26px; line-height:1.2; font-weight:normal; margin-top:0; margin-bottom:0;"><a style="color:#114eb1;" href="#" target="_blank">HEADING</a></h1>
-																</td>
-																<!-- /secondary article (120px image) heading text -->
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<table align="right" width="280" cellpadding="0" cellspacing="0" border="0">
-												<tr valign="top" class="hide">
-													<!-- blank cell - do not use for content -->
-													<td bgcolor="#ffffff" height="18">
-														<img src="img/blank.gif" width="1" height="1" border="0" alt="" />
-													</td>
-													<!-- /blank cell -->
-												</tr>
-												<tr valign="top">
-													<td>
-														<!-- secondary article (120px image) paragraph text -->
-														<table width="100%" cellpadding="10" cellspacing="0" border="0">
-															<tr>
-																<td>
-																	<p style="margin-top:0; margin-bottom:0;">Ne sea soluta voluptatum. Ut nec augue disputationi, unum utamur vis in. Possit gubergren at mea. Sed an erant movet.</p>
-																</td>
-															</tr>
-														</table>
-														<!-- /secondary article (120px image) paragraph text -->
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<img src="img/shadow.gif" width="560" height="8" border="0" alt="" class="shadow" />
-										</td>
-									</tr>
-								</table>
-								<!-- /secondary article (short story) -->
+                                <!-- secondary article (short story) -->
+                                <table bgcolor="#f6f4f1" style="margin-bottom:1em;" width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable">
+                                    <tr valign="top">
+                                        <td>
+                                            <table align="left" width="280" cellpadding="0" cellspacing="0" border="0">
+                                                <tr valign="top">
+                                                    <!-- blank cell - do not use for content -->
+                                                    <td bgcolor="#ffffff" height="18">
+                                                        <img src="img/blank.gif" width="1" height="1" border="0" alt="" />
+                                                    </td>
+                                                    <!-- /blank cell -->
+                                                    <!-- secondary article (120px image) main image -->
+                                                    <td width="120" rowspan="2">
+                                                        <a href="{*WINNERSLINK*}" target="_blank"><img src="img/secondary-article-short-story.jpg" width="120" height="90" border="0" alt="" /></a>
+                                                    </td>
+                                                    <!-- /secondary article (120px image) main image -->
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td>
+                                                        <table width="160" cellpadding="0" cellspacing="0" border="0" style="padding-bottom:0;">
+                                                            <tr>
+                                                                <!-- blank cell - do not use for content -->
+                                                                <td height="10" colspan="2">
+                                                                    <img src="img/blank.gif" width="1" height="1" border="0" alt="" />
+                                                                </td>
+                                                                <!-- /blank cell -->
+                                                            </tr>
+                                                            <tr>
+                                                                <!-- blank cell - do not use for content -->
+                                                                <td width="10">
+                                                                    <img src="img/blank.gif" width="1" height="1" border="0" alt="" />
+                                                                </td>
+                                                                <!-- /blank cell -->
+                                                                <!-- secondary article (120px image) heading text -->
+                                                                <td>
+                                                                    <h1 style="color:#666666; font-size:26px; line-height:1.2; font-weight:normal; margin-top:0; margin-bottom:0;"><a style="color:#114eb1;" href="#" target="_blank">HEADING</a></h1>
+                                                                </td>
+                                                                <!-- /secondary article (120px image) heading text -->
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table align="right" width="280" cellpadding="0" cellspacing="0" border="0">
+                                                <tr valign="top" class="hide">
+                                                    <!-- blank cell - do not use for content -->
+                                                    <td bgcolor="#ffffff" height="18">
+                                                        <img src="img/blank.gif" width="1" height="1" border="0" alt="" />
+                                                    </td>
+                                                    <!-- /blank cell -->
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td>
+                                                        <!-- secondary article (120px image) paragraph text -->
+                                                        <table width="100%" cellpadding="10" cellspacing="0" border="0">
+                                                            <tr>
+                                                                <td>
+                                                                    <p style="margin-top:0; margin-bottom:0;">Ne sea soluta voluptatum. Ut nec augue disputationi, unum utamur vis in. Possit gubergren at mea. Sed an erant movet.</p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <!-- /secondary article (120px image) paragraph text -->
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="img/shadow.gif" width="560" height="8" border="0" alt="" class="shadow" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- /secondary article (short story) -->
 
 
-								<!-- secondary article (long story) -->
-								<table bgcolor="#f6f4f1" style="margin-bottom:1em;" width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable">
-									<tr>
-										<td>
-											<table width="560" cellpadding="10" cellspacing="0" border="0" align="center" class="innertable">
-												<tr>
-													<td>
-														<h1 style="color:#666666; font-size:26px; line-height:1.2; font-weight:normal; margin-top:0; margin-bottom:0.5em;"><a style="color:#114eb1;" href="#" target="_blank">HEADING</a> <a class="hide" href="#" target="_blank"><img style="display:block; border:none; outline:none; text-decoration:none; margin-left:5px;" align="right" src="img/secondary-article-long-story.jpg" width="140" height="112" border="0" alt="" /></a></h1>
-														<p style="margin-top:0; margin-bottom:0;">Ex graeci civibus eleifend vim, mel et utroque fastidii. Sed eu omnis disputando, voluptatum appellantur vix an. Exerci detracto at his, at illud debitis vis, augue congue inimicus his ei. Cetero intellegat ius an. Eu sed nobis tation, erant elaboraret eam at.</p>
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<img src="img/shadow.gif" width="560" height="8" border="0" alt="" class="shadow" />
-										</td>
-									</tr>
-								</table>
-								<!-- /secondary article (long story) -->
+                                <!-- secondary article (long story) -->
+                                <table bgcolor="#f6f4f1" style="margin-bottom:1em;" width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable">
+                                    <tr>
+                                        <td>
+                                            <table width="560" cellpadding="10" cellspacing="0" border="0" align="center" class="innertable">
+                                                <tr>
+                                                    <td>
+                                                        <h1 style="color:#666666; font-size:26px; line-height:1.2; font-weight:normal; margin-top:0; margin-bottom:0.5em;"><a style="color:#114eb1;" href="#" target="_blank">HEADING</a> <a class="hide" href="#" target="_blank"><img style="display:block; border:none; outline:none; text-decoration:none; margin-left:5px;" align="right" src="img/secondary-article-long-story.jpg" width="140" height="112" border="0" alt="" /></a></h1>
+                                                        <p style="margin-top:0; margin-bottom:0;">Ex graeci civibus eleifend vim, mel et utroque fastidii. Sed eu omnis disputando, voluptatum appellantur vix an. Exerci detracto at his, at illud debitis vis, augue congue inimicus his ei. Cetero intellegat ius an. Eu sed nobis tation, erant elaboraret eam at.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="img/shadow.gif" width="560" height="8" border="0" alt="" class="shadow" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- /secondary article (long story) -->
 
 
-							</td>
-						</tr>
-						<!-- /CONTENT -->
+                            </td>
+                        </tr>
+                        <!-- /CONTENT -->
 
 
-						<!-- FOOTER -->
-						<tr>
-							<td>
-								<table bgcolor="#cccccc" width="100%" cellpadding="0" cellspacing="0" border="0">
-									<tr>
-										<td>
-											<table align="left" width="280" cellpadding="10" cellspacing="0" border="0" class="collapse-cell">
-												<tr>
-													<td>
-														<a href="*|FORWARD|*" target="_blank" style="color:#114eb1; text-decoration:none;">Send to a friend</a> <span style="color:#666666;">&#124;</span> <a href="*|LIST:URL|*" target="_blank" style="color:#114eb1; text-decoration:none;">Contact us</a><br />
-															 <a href="*|UPDATE_PROFILE|*" target="_blank" style="color:#114eb1; text-decoration:none;">Update profile</a> <span style="color:#666666;">&#124;</span> <a href="*|UNSUB|*" target="_blank" style="color:#114eb1; text-decoration:none;">Unsubscribe</a>
-													</td>
-												</tr>
-											</table>
-											<table align="right" width="280" cellpadding="10" cellspacing="0" border="0" class="collapse-cell social-media">
-												<tr>
-													<td>
-														<a href="#" target="_blank"><img style="margin-left:1em;" align="right" src="img/facebook.gif" width="32" height="32" border="0" alt="Facebook" /></a>
-														<a href="#" target="_blank"><img style="margin-left:1em;" align="right" src="img/googleplus.gif" width="32" height="32" border="0" alt="Google+" /></a>
-														<a href="#" target="_blank"><img style="margin-left:1em;" align="right" src="img/linkedin.gif" width="32" height="32" border="0" alt="LinkedIn" /></a>
-														<a href="#" target="_blank"><img style="margin-left:1em;" align="right" src="img/twitter.gif" width="32" height="32" border="0" alt="Twitter" /></a>
-														<a href="#" target="_blank"><img style="margin-left:1em;" align="right" src="img/youtube.gif" width="32" height="32" border="0" alt="YouTube" /></a>
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<!-- /FOOTER -->
+                        <!-- FOOTER -->
+                        <tr>
+                            <td>
+                                <table bgcolor="#cccccc" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td>
+                                            <table align="left" width="280" cellpadding="10" cellspacing="0" border="0" class="collapse-cell">
+                                                <tr>
+                                                    <td>
+                                                        <a href="*|FORWARD|*" target="_blank" style="color:#114eb1; text-decoration:none;">Send to a friend</a> <span style="color:#666666;">&#124;</span> <a href="*|LIST:URL|*" target="_blank" style="color:#114eb1; text-decoration:none;">Contact us</a><br />
+                                                             <a href="*|UPDATE_PROFILE|*" target="_blank" style="color:#114eb1; text-decoration:none;">Update profile</a> <span style="color:#666666;">&#124;</span> <a href="*|UNSUB|*" target="_blank" style="color:#114eb1; text-decoration:none;">Unsubscribe</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table align="right" width="280" cellpadding="10" cellspacing="0" border="0" class="collapse-cell social-media">
+                                                <tr>
+                                                    <td>
+                                                        <a href="#" target="_blank"><img style="margin-left:1em;" align="right" src="img/facebook.gif" width="32" height="32" border="0" alt="Facebook" /></a>
+                                                        <a href="#" target="_blank"><img style="margin-left:1em;" align="right" src="img/googleplus.gif" width="32" height="32" border="0" alt="Google+" /></a>
+                                                        <a href="#" target="_blank"><img style="margin-left:1em;" align="right" src="img/linkedin.gif" width="32" height="32" border="0" alt="LinkedIn" /></a>
+                                                        <a href="#" target="_blank"><img style="margin-left:1em;" align="right" src="img/twitter.gif" width="32" height="32" border="0" alt="Twitter" /></a>
+                                                        <a href="#" target="_blank"><img style="margin-left:1em;" align="right" src="img/youtube.gif" width="32" height="32" border="0" alt="YouTube" /></a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- /FOOTER -->
 
 
-						<!-- SUBFOOTER -->
-						<tr>
-							<td>
-								<table width="100%" cellpadding="10" cellspacing="0" border="0">
-									<tr>
-										<td valign="top" style="font-size:11px;">
-											&copy;*|CURRENT_YEAR|* *|LIST:COMPANY|*. All rights reserved. This email was sent to *|EMAIL|*, by *|LIST:ADDRESS|*. *|LIST:DESCRIPTION|*
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<!-- /SUBFOOTER -->
+                        <!-- SUBFOOTER -->
+                        <tr>
+                            <td>
+                                <table width="100%" cellpadding="10" cellspacing="0" border="0">
+                                    <tr>
+                                        <td valign="top" style="font-size:11px;">
+                                            &copy;*|CURRENT_YEAR|* *|LIST:COMPANY|*. All rights reserved. This email was sent to *|EMAIL|*, by *|LIST:ADDRESS|*. *|LIST:DESCRIPTION|*
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- /SUBFOOTER -->
 
 
-					</table>
-				</td>
-			</tr>
-		</table>
-		<!-- End of wrapper table -->
-	</div>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!-- End of wrapper table -->
+    </div>
 
 </body>
 </html>
