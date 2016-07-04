@@ -476,9 +476,16 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                                 <table width="100%" cellpadding="10" cellspacing="0" border="0">
                                     <tr>
                                         <td valign="top" style="font-size:11px;">
-                                            &copy;*|CURRENT_YEAR|* *|LIST:COMPANY|*. All rights reserved. This email was sent to *|EMAIL|*, by *|LIST:ADDRESS|*. *|LIST:DESCRIPTION|*
+                                            &copy;*|CURRENT_YEAR|* *|LIST:COMPANY|*. All rights reserved. *|IFNOT:ARCHIVE_PAGE|* This email was sent to *|EMAIL|*, by *|LIST:ADDRESS|*. *|LIST:DESCRIPTION|* *|END:IF|*
                                         </td>
                                     </tr>
+                                    *|IF:REWARDS|*
+                                        <tr>
+                                            <td valign="top" style="font-size:11px;">
+                                                *|HTML:REWARDS|*
+                                            </td>
+                                        </tr>
+                                    *|END:IF|*
                                 </table>
                             </td>
                         </tr>
