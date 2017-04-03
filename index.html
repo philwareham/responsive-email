@@ -9,12 +9,8 @@
     <meta property="og:title" content="*|MC:SUBJECT|*" />
 
     <style type="text/css">
-        /* EMBEDDED CSS
-           Android Mail doesn't support "class" declarations outside of a media query so use inline CSS as a rule.
-           More info: Http://www.emailonacid.com/blog/the_android_mail_app_and_css_class_declarations/ */
 
-
-        /****** EMAIL CLIENT BUG FIXES - BEST NOT TO CHANGE THESE ********/
+        /****** RESETTING DEFAULTS, IT IS BEST TO OVERWRITE THESE STYLES INLINE ********/
 
 
         /* Forces Hotmail to display emails at full width. */
@@ -23,23 +19,18 @@
         /* Forces Hotmail to display normal line spacing. */
         .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
 
-        /* Prevents Webkit and Windows Mobile platforms from changing default font sizes. */
-        body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none;}
+        /* Prevents WebKit and Windows Mobile platforms from changing default font sizes. Resets body padding. */
+        body {-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; text-size-adjust:100%; margin:0; padding:0;}
 
-        /* Resets all body margins and padding to "0" for good measure. */
-        body {margin:0; padding:0;}
+        /* Reset padding around tables */
+        table {border-spacing:0; border-collapse:collapse;}
 
-        /* Resolves webkit padding issue. */
-        table {border-spacing:0;}
-
-        /* Resolves the Outlook 2007, 2010, and Gmail td padding issue. */
+        /* Resolves the Outlook 2007, 2010, and Gmail padding issue. */
         table td {border-collapse:collapse;}
 
-
-        /****** END BUG FIXES ********/
-
-
-        /****** RESETTING DEFAULTS, IT IS BEST TO OVERWRITE THESE STYLES INLINE ********/
+        /* Clean, responsive images. */
+        img {-ms-interpolation-mode:bicubic; display:block; width:auto; max-width:100%; outline:none; text-decoration:none;}
+        a img {border:none;}
 
 
         /* This sets a clean slate for all clients EXCEPT Gmail.
@@ -89,60 +80,40 @@
 
 
         /****** MEDIA QUERIES ********/
-        /* You must use attribute selectors in your media queries to prevent Yahoo from rendering these styles.
-           We added a yahoo attribute in the body tag to complete this fix.
-           More info: http://www.emailonacid.com/blog/details/C13/stop_yahoo_mail_from_rendering_your_media_queries */
 
         /* Target mobile devices. */
         /* @media only screen and (max-device-width: 639px) { */
         @media only screen and (max-width: 639px) {
 
             /* Hide elements at smaller screen sizes (!important needed to override inline CSS). */
-            body[yahoo] .hide {display:none !important;}
+            .hide {display:none !important;}
 
             /* Adjust table widths at smaller screen sizes. */
-            body[yahoo] .table {width:320px !important;}
-            body[yahoo] .innertable {width:280px !important;}
+            .table {width:320px !important;}
+            .innertable {width:280px !important;}
 
             /* Resize hero image at smaller screen sizes. */
-            body[yahoo] .heroimage {width:280px !important; height:100px !important;}
+            .heroimage {width:280px !important; height:100px !important;}
 
             /* Resize page shadow at smaller screen sizes. */
-            body[yahoo] .shadow {width:280px !important; height:4px !important;}
+            .shadow {width:280px !important; height:4px !important;}
 
             /* Collapse cells at smaller screen sizes. */
-            body[yahoo] .collapse-cell {width:320px !important;}
+            .collapse-cell {width:320px !important;}
 
             /* Range social icons left at smaller screen sizes. */
-            body[yahoo] .social-media img {float:left !important; margin:0 1em 0 0 !important;}
-
-        }
-
-        /* Target tablet devices. */
-        /* @media only screen and (min-device-width: 640px) and (max-device-width: 1024px) { */
-        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+            .social-media img {float:left !important; margin:0 1em 0 0 !important;}
 
         }
 
 
         /*** END EDITABLE STYLES ***/
 
-
-        /****** TEMPORARY - THESE SHOULD BE MOVED INLINE AT END OF YOUR DEVELOPMENT PROCESS ********/
-
-        img {display:block; border:none; outline:none; text-decoration:none;}
-
-        /* Remove spacing around Outlook 07, 10 tables */
-        table {border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;}
-
-        /*** END TEMPORARY ***/
     </style>
-
-
 </head>
 
 
-<body style="width:100% !important; min-height:1000px; color:#333333; background:#e0dbcf; font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:1.4;" alink="#114eb1" link="#114eb1" bgcolor="#e0dbcf" text="#333333" yahoo="fix">
+<body style="width:100% !important; min-height:1000px; color:#333333; background:#e0dbcf; font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:1.4;" alink="#114eb1" link="#114eb1" bgcolor="#e0dbcf" text="#333333">
 <!-- You may adjust each of the values above for your template as needed.
 
 We've included the style attribute for Gmail because it does not support embedded CSS and it will convert this body tag to
