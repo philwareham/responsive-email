@@ -1,0 +1,24 @@
+{
+  "name": "responsive-email",
+  "description": "A table-based (but responsive) email template.",
+  "version": "1.0.3",
+  "keywords": [
+    "email",
+    "template",
+    "responsive",
+    "html",
+    "css"
+  ],
+  "author": {
+    "name": "Phil Wareham",
+    "url": "https://twitter.com/philwareham"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/philwareham/responsive-email.git"
+  },
+  "bugs": {
+    "url": "https://github.com/philwareham/responsive-email/issues"
+  },
+  "license": "MIT"
+}
